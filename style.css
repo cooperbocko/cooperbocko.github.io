@@ -1,0 +1,111 @@
+/* Vibrant Color Palette */
+:root {
+    --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --card-bg: rgba(255, 255, 255, 0.95);
+    --accent-color: #ff007a; /* Neon Pink */
+    --secondary-accent: #00d4ff; /* Electric Blue */
+    --text-main: #2d3436;
+    --nav-bg: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* A rounder, modern font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-gradient);
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: var(--text-main);
+}
+
+header {
+    background: var(--nav-bg);
+    backdrop-filter: blur(10px); /* Modern frosted glass effect */
+    padding: 1.5rem 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--secondary-accent);
+}
+
+.container {
+    max-width: 750px;
+    margin: 3rem auto;
+    background: var(--card-bg);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    /* Subtle border for pop */
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(to right, var(--accent-color), var(--secondary-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: var(--secondary-accent);
+    border-left: 5px solid var(--accent-color);
+    padding-left: 15px;
+}
+
+/* Updated Button Styles */
+.btn {
+    display: inline-block;
+    background: var(--accent-color);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 15px rgba(255, 0, 122, 0.3);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 0, 122, 0.5);
+    background: #e6006e;
+}
+
+.project-card {
+    border-bottom: 1px solid #eee;
+    padding: 2rem 0;
+}
+
+.links-list li {
+    background: #f8f9fa;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid var(--secondary-accent);
+    transition: background 0.3s ease;
+}
+
+.links-list li:hover {
+    background: #fff;
+    transform: scale(1.02);
+}
+
+.links-list a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
